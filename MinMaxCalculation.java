@@ -31,10 +31,22 @@ public class MinMaxCalculation {
     }
 
     public static int findMin(int[] nums) {
-        //TODO
+        int min = nums[0];
+        for (int num : nums) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min;
     }
 
     public static int findMax(int[] nums) {
-        //TODO
+        int max = nums[0];
+        for (int num : nums) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
     }
 }
